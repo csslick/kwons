@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "skipLibCheck": true, // 라이브러리 체크를 무시합니다.
-    "noEmit": true   // 실제로 JavaScript로 변환하지 않고 타입 체크만 수행하도록 설정
   },
+  "exclude": ["src/**/*.ts", "src/**/d.tsx", "src/**/*.tsx", "src/**/*.vue"], 
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
