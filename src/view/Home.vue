@@ -77,11 +77,19 @@ const isModal = ref(false);
 const img_url = ref('');
 
 onMounted(() => {
-  window.addEventListener('beforeinstallprompt', (e) => {
-    e.preventDefault(); // 자동 설치 방지
-    deferredPrompt = e; // 나중에 사용을 위해 저장
-    isInstallBtn.value = true; // 설치버튼 표시
-  });
+    // iOS 디바이스 감지(Mac은 지원하므로 따로 처리하지 않음)
+    const isIOS = /iphone|ipad|ipod(?!.*macintosh)/.test(window.navigator.userAgent.toLowerCase());
+
+    if (isIOS) {
+        // iOS에서는 안내 메시지로 직접 추가를 유도
+        alert('공유 버튼을 누르고 "홈 화면에 추가"로 앱을 설치할 수 있습니다.');
+    } else {
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault(); // 자동 설치 방지
+            deferredPrompt = e; // 나중에 사용을 위해 저장
+            isInstallBtn.value = true; // 설치버튼 표시
+        });
+    }
 });
 
 const handleInstallClick = async () => {
