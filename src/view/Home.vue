@@ -82,7 +82,7 @@ onMounted(() => {
 
     if (isIOS) {
         // iOS에서는 안내 메시지로 직접 추가를 유도
-        alert('공유 버튼을 누르고 "홈 화면에 추가"로 앱을 설치할 수 있습니다.');
+        alert('Safari에서 공유 버튼을 누르고 "홈 화면에 추가"로 앱을 설치할 수 있습니다.');
     } else {
         window.addEventListener('beforeinstallprompt', (e) => {
             e.preventDefault(); // 자동 설치 방지
