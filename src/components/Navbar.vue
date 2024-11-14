@@ -70,6 +70,9 @@
   }
 
   .toggle-menu {
+    ul {
+      list-style-type: none;
+    }
     position: fixed;
     top: 0;
     right: 0;
@@ -84,8 +87,8 @@
 
     button {
       position: absolute;
-      right: 50px;
-      top: 50px;
+      right: 30px;
+      top: 10px;
     }
   }
   
@@ -105,6 +108,13 @@
         height: 100%;
         margin: 0 auto;
       } 
+    }
+
+    .toggle-menu {
+      button {
+        right: 15px;
+        top: 10px;
+      }
     }
 
   }
