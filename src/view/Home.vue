@@ -2,12 +2,17 @@
     <main>
         <div class="left">
             <News />
-            <h1 class="title">
-                <span>KW</span>
-                <span>O</span>
-                <span>N'S</span>
-                <br>FAMILY
-            </h1>
+            <div class="logo">
+                <h1 class="title">
+                    <span>KW</span>
+                    <span>O</span>
+                    <span>N'S</span>
+                    <br>FAMILY
+                </h1>
+                <div v-if="isInstallBtn">
+                    <button @click="handleInstallClick" class="cta">앱 설치하기</button>
+                </div>
+            </div>
         </div>
         <div class="right">
             <figure>
@@ -56,21 +61,56 @@
 </template>
 
 <script setup lang='ts'>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 // import { newsData, hotestNewsData } from '../assets/newsData';
 import { hotestNewsData } from '../assets/newsData';
 import News from '../components/News.vue'
 import Modal from '../components/Modal.vue';
 import { Icon } from '@iconify/vue';
 
+const isInstallBtn = ref(false); // 앱 설치 버튼 활성화 여부
+let deferredPrompt = null; // 모바일 설치 버튼 클릭 이벤트 핸들러
+
 // const news = ref(newsData)
 const hotest_news = ref(hotestNewsData);
 const isModal = ref(false);
 const img_url = ref('');
 
+onMounted(() => {
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault(); // 자동 설치 방지
+    deferredPrompt = e; // 나중에 사용을 위해 저장
+    isInstallBtn.value = true; // 설치버튼 표시
+  });
+});
+
+const handleInstallClick = async () => {
+  if (deferredPrompt) {
+    deferredPrompt.prompt(); // 시스템 설치 창 표시
+    const choiceResult = await deferredPrompt.userChoice; // 사용자 선택 감지
+    if (choiceResult.outcome === 'accepted') {
+      console.log('앱이 설치되었습니다.');
+    } else {
+      console.log('앱 설치가 취소되었습니다.');
+    }
+    deferredPrompt = null;  // 사용 후 이벤트 초기화
+    isInstallBtn.value = false; // 설치버튼 닫음
+  }
+};
 </script>
 
 <style scoped lang="scss">
+.cta {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
 button {
   background: none;
   border: none;
@@ -88,14 +128,14 @@ h1 {
 
 @media screen and (min-width: 768px) {
     main {
-        padding-top: 50px;
+        padding-top: 30px;
         display: flex;
         height: calc(100vh - 50px);
 
         .left {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: space-around;
             padding-left: 30px;
         }
 

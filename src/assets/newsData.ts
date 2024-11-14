@@ -14,7 +14,7 @@ export const newsData = [
   },
   {
     title: "베리와 은행나무 아래에서",
-    date: "2023-11-03",
+    date: "2024-11-03",
     content: "10년생 베리, 500년생 은행나무...",
     img_url: "images/IMG_3902.jpeg",
   },

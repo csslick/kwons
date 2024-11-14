@@ -32,7 +32,14 @@ import Modal from '../components/Modal.vue';
 import { Icon } from '@iconify/vue';
 
 const isModal = ref(false);
-const news = ref(newsData.reverse());
+const news = ref(newsData);
+// news 내림차순
+news.value.sort((a, b) => {
+  const dateA = new Date(a.date);
+  const dateB = new Date(b.date);
+  return dateB.getTime() - dateA.getTime();
+});
+
 const img_url = ref('');
 const title = ref('');
 const content = ref('');

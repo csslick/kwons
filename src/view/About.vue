@@ -64,5 +64,6 @@
 .kwon{ font-weight: normal;}
 .kwon::first-letter {
     font-size: 3rem;
+    font-family: serif;
 }
 </style>
