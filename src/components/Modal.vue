@@ -13,11 +13,11 @@
 <style scoped lang='scss'>
 .modal {
   position: fixed;
-  top: 50px;
+  top: 0px;
   left: 0;
   width: 100%;
-  height: calc(100vh - 50px);
-  background-color: rgba(0, 0, 0, 0.8);
+  height: calc(100vh);
+  background-color: rgba(0, 0, 0, 0.85);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,14 +25,14 @@
 
   color: #fff;
   text-align: center;
+  // border: 2px solid red;
 }
 
 @media screen and (min-width: 768px) {
   .modal {
     :deep(img) {
-      width: 50%;
-      height: 100%;
-      object-fit: contain;
+      height: 80vh;
+      // border:2px solid green;
     }
   }
 }

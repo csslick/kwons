@@ -92,12 +92,6 @@ h1 {
         display: flex;
         height: calc(100vh - 50px);
 
-        .left,
-        .right {
-            width: 50%;
-
-        }
-
         .left {
             display: flex;
             flex-direction: column;
@@ -134,7 +128,7 @@ h1 {
 
             .img2 {
                 a:nth-child(2) {
-                    max-height: 45vh;
+                    // max-height: 45vh;
                     position: fixed;
                     right: 0;
                     bottom: 0;

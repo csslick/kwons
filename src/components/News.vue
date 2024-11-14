@@ -2,7 +2,7 @@
   <div class="news-container">
     <h2>Latest News</h2>
     <ul class="news">
-      <li v-for="(news, i) in newsData.reverse()" :key="i">
+      <li v-for="(news, i) in newsData" :key="i">
         <a :href="news.img_url" target="_blank" @click.prevent="showModal(news)">
           <h4>{{ news.title }}</h4>
           <time>{{ news.date }}</time>
@@ -32,13 +32,20 @@ import Modal from '../components/Modal.vue';
 import { Icon } from '@iconify/vue';
 
 const isModal = ref(false);
-const news = ref(newsData);
+const news = ref(newsData.reverse());
 const img_url = ref('');
 const title = ref('');
 const content = ref('');
 console.log(news.value);
 
-const showModal = (news) => {
+interface NewsItem {
+  title: string;
+  content: string;
+  img_url: string;
+  date: string;
+}
+
+const showModal = (news: NewsItem) => {
   isModal.value = true;
   img_url.value = news.img_url;
   title.value = news.title;

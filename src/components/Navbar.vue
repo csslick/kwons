@@ -1,12 +1,14 @@
 <template>
   <header>
-    <nav>
-      <router-link to="/">Home</router-link>
-      <!-- <router-link to="/about">About</router-link> -->
-    </nav>
-    <button @click="toggleMenu">
-      <Icon icon="ri:menu-3-line" width="24" height="24"  style="color: 4b3c30" />
-    </button>
+    <div class="header-container">
+      <nav>
+        <router-link to="/">Home</router-link>
+        <!-- <router-link to="/about">About</router-link> -->
+      </nav>
+      <button @click="toggleMenu">
+        <Icon icon="ri:menu-3-line" width="24" height="24"  style="color: 4b3c30" />
+      </button>
+    </div>
   </header>
 
   <div class="toggle-menu" v-if="isMenuOpen">
@@ -45,14 +47,22 @@
 
   header {
     position: fixed;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 50px;
     border-bottom: 1px solid var(--text-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 0 30px;
     background: #fff;
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1440px;
+      height: 100%;
+      margin: 0 auto;
+    } 
   }
 
   a {
@@ -85,10 +95,16 @@
       width: 100%;
       height: 50px;
       border-bottom: 1px solid var(--text-color);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       padding: 0 20px;
+
+      .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1440px;
+        height: 100%;
+        margin: 0 auto;
+      } 
     }
 
   }
