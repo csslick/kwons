@@ -17,7 +17,7 @@
         <div class="right">
             <figure>
                 <div class="img1">
-                    <iframe src="https://www.youtube.com/embed/xEl_Hgx7JFA?si=g1CgHd6Nblyyvs7d"
+                    <iframe :src="movie.url"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -63,7 +63,7 @@
 <script setup lang='ts'>
 import { ref, onMounted } from 'vue'
 // import { newsData, hotestNewsData } from '../assets/newsData';
-import { hotestNewsData } from '../assets/newsData';
+import { hotestNewsData, movieData } from '../assets/newsData';
 import News from '../components/News.vue'
 import Modal from '../components/Modal.vue';
 import { Icon } from '@iconify/vue';
@@ -75,6 +75,9 @@ let deferredPrompt = null; // 모바일 설치 버튼 클릭 이벤트 핸들러
 const hotest_news = ref(hotestNewsData);
 const isModal = ref(false);
 const img_url = ref('');
+
+// movieData randome 선택 
+const movie = ref(movieData[Math.floor(Math.random() * movieData.length)]);
 
 onMounted(() => {
     // iOS 디바이스 감지(Mac은 지원하므로 따로 처리하지 않음)

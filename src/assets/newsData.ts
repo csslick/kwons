@@ -46,3 +46,37 @@ export const hotestNewsData = [
     img_url: "https://via.placeholder.com/305x"
   },
 ]
+
+export const movieData = [
+  {
+    title: '권씨네 남해 여행기-여수',
+    date: '2021-10-9',
+    content: '사찰 전망대까지 올라가 봤습니다. 바다 풍경이 좋았습니다.',
+    url:'https://www.youtube.com/embed/1obMEs6XCAg?si=Za5YeR4lKgWZ59Ce',
+  },
+  {
+    title: '권씨네 남해 여행기',
+    date: '2021-10-10',
+    content: '차로 남해 유람 예지 엄마의 폭주도 보고 회도 맛있게 먹고 추억이 새록새록',
+    url:'https://www.youtube.com/embed/xEl_Hgx7JFA?si=g1CgHd6Nblyyvs7d',
+  },
+  {
+    title: '2021년 크리스마스 이브',
+    date: '2021-12-24',
+    content: '명동 신세계 백화점 주변. 추억이 많은 곳에서 가족들과 함께',
+    url:'https://www.youtube.com/embed/05Q0MLrvfRQ?si=Fc0G1sGXNXoBQ0M_',
+  },
+  {
+    title: '사패산에서',
+    date: '2024-01-10',
+    content: '예서와 느닫없이 가보았는데 대박이었다. 덤으로 분식집도 괜찮았음',
+    url:'https://www.youtube.com/embed/k0xZ9ilspNg?si=_UAo0E6bEhHO-wBV',
+  },
+  {
+    title: '500년 묶은 은행나무 방문',
+    date: '2024-11-03',
+    content: '쌍문동의 명소 중 하나. 주변에 왕릉도 있고 전통 양식의 가옥으로 만든 도서관도 있다. 은행 나무가 벗꽃 마냥 화려하게 떨어진다.',
+    url:'https://www.youtube.com/embed/1NQp0mR7wNs',
+  },
+
+]
