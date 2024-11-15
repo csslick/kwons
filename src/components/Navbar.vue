@@ -15,6 +15,7 @@
     <ul>
       <li><router-link to="/" @click="isMenuOpen=false">Home</router-link></li>
       <li><router-link to="/about" @click="isMenuOpen=false">About</router-link></li>
+      <li><router-link to="/posts" @click="isMenuOpen=false">Posts</router-link></li>
     </ul>
     <button @click="isMenuOpen=false">
       <Icon icon="material-symbols:close" width="32" height="32"  style="color: 4b3c30" />

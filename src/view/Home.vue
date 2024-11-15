@@ -26,7 +26,8 @@
                     <a
                         @click.prevent="
                             img_url=hotest_news[0].img_url;
-                            isModal=true;title=hotest_news[0].title;
+                            isModal=true;
+                            title=hotest_news[0].title;
                             content=hotest_news[0].content"
                             href="#"
                     >
@@ -35,7 +36,8 @@
                     <a
                         @click.prevent="
                             img_url=hotest_news[1].img_url;
-                            isModal=true;title=hotest_news[1].title;
+                            isModal=true;
+                            title=hotest_news[1].title;
                             content=hotest_news[1].content"
                             href="#"
                     >

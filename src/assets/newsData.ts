@@ -1,6 +1,12 @@
 // 제목과 날짜를 포함한 뉴스 데이터 배열
 export const newsData = [
   {
+    title: "파주 흔들다리 체험",
+    date: "2020-01-25",
+    content: "파주에서 흔들다리 명소들을 체험해봤어요.",
+    img_url: "https://lh3.googleusercontent.com/pw/AP1GczNeXI5wGUlE_h6E84ZhMzZEDiTGtjgSzKx_V7syqHUzwd8bE-APHni_pC953fJY2tpYMdtBUyQVf_jScFTOba12ybsd0lofjge5dr5N-q4tlPiq7exOJmk2TnUsJXosRARC9Q7LiBt6nuChLm7G5JHt=w1448-h1714-s-no-gm?authuser=0",
+  },
+  {
     title: "예서의 서울대 졸업을 축하하며",
     date: "2024-02-26",
     content: "시간이 흘러 꿈같던 대학생활도 끝나고 엄마가 너무 기뻐하네요.",
@@ -19,10 +25,22 @@ export const newsData = [
     img_url: "images/IMG_3902.jpeg",
   },
   {
+    title: "권씨네의 이상한 무브먼트 2",
+    date: "2023-11-03",
+    content: "두 번째",
+    img_url: "images/IMG_3900.gif",
+  },
+  {
     title: "어머니의 아들 얼굴 그리는 중...",
     date: "2024-11-13",
     content: "아들 얼굴을 그려달라고 부탁해봤는데 진지하게 그려주심",
     img_url: "images/mom_draw_me2024_11_13.jpeg",
+  },
+  {
+    title: '결혼 기념일 30주년',
+    date: '2023-11-26',
+    content: '믿기지가 않네요 ^^',
+    img_url:'https://lh3.googleusercontent.com/pw/AP1GczNcpmCPemRVHvFxSgDqo6WqjfeL-wyP4xe6KZJRa6gbK_-iSTXwoRtnXssTf2HtyPAt4AQraWOrDYSIo5jdhG0BruTl7VwHZ6GV-8RsZxMl3hBCslTLvPUO0Uk4-4h8G6HgNbceryGPFMUPQ6h9WEnw=w965-h724-s-no-gm?authuser=0',
   },
 ]
 
@@ -31,19 +49,13 @@ export const hotestNewsData = [
     title: "hotest 첫 번째 뉴스 제목",
     date: "2024-11-13",
     content: "첫 번째",
-    img_url: newsData[2].img_url,
+    img_url: newsData[0].img_url,
   },
   {
     title: "hotest 두 번째 뉴스 제목",
     date: "2023-11-14",
     content: "두 번째",
-    img_url: "images/IMG_3900.gif",
-  },
-  {
-    title: "hotest 세 번째 뉴스 제목",
-    date: "2023-11-15",
-    content: "세 번째",
-    img_url: "https://via.placeholder.com/305x"
+    img_url: newsData[4].img_url,
   },
 ]
 

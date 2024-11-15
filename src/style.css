@@ -41,6 +41,10 @@ body {
   margin: 0 auto;
 }
 
+h2 {
+  margin-bottom: 0.6rem;
+}
+
 .container {
   margin: 0 auto;
   padding: 30px 30px;

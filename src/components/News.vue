@@ -2,7 +2,7 @@
   <div class="news-container">
     <h2>Latest News</h2>
     <ul class="news">
-      <li v-for="(news, i) in newsData" :key="i">
+      <li v-for="(news, i) in news" :key="i">
         <a :href="news.img_url" target="_blank" @click.prevent="showModal(news)">
           <h4>{{ news.title }}</h4>
           <time>{{ news.date }}</time>
@@ -32,18 +32,23 @@ import Modal from '../components/Modal.vue';
 import { Icon } from '@iconify/vue';
 
 const isModal = ref(false);
-const news = ref(newsData);
-// news 내림차순
-news.value.sort((a, b) => {
-  const dateA = new Date(a.date);
-  const dateB = new Date(b.date);
-  return dateB.getTime() - dateA.getTime();
-});
+
+// 내림차순 정렬 후 상위 3개 뉴스만 보여줌
+const news = ref(
+  newsData
+    .sort((a, b) => {
+      const dateA = new Date(a.date);
+      const dateB = new Date(b.date);
+      return dateB.getTime() - dateA.getTime();
+    })
+    .slice(0, 5)
+);
+
+console.log(news.value);
 
 const img_url = ref('');
 const title = ref('');
 const content = ref('');
-console.log(news.value);
 
 interface NewsItem {
   title: string;
