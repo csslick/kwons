@@ -38,12 +38,6 @@ main.container {
   height: calc(100vh - 50px);
 }
 
-main header {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-}
-
 figure {
   height: 100%;
   /* border: 2px solid red; */
