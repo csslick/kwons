@@ -52,15 +52,33 @@ export const newsData = [
 
 export const hotestNewsData = [
   {
-    title: "hotest 첫 번째 뉴스 제목",
-    date: "2024-11-13",
-    content: "첫 번째",
+    title: newsData[0].title,
+    date: newsData[0].date,
+    content: newsData[0].content,
     img_url: newsData[0].img_url,
   },
   {
-    title: "hotest 두 번째 뉴스 제목",
-    date: "2023-11-14",
-    content: "두 번째",
+    title: newsData[1].title,
+    date: newsData[1].date,
+    content: newsData[1].content,
+    img_url: newsData[1].img_url,
+  },
+  {
+    title: newsData[2].title,
+    date: newsData[2].date,
+    content: newsData[2].content,
+    img_url: newsData[2].img_url,
+  },
+  {
+    title: newsData[3].title,
+    date: newsData[3].date,
+    content: newsData[3].content,
+    img_url: newsData[3].img_url,
+  },
+  {
+    title: newsData[4].title,
+    date: newsData[4].date,
+    content: newsData[4].content,
     img_url: newsData[4].img_url,
   },
 ]
