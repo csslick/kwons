@@ -42,6 +42,12 @@ export const newsData = [
     content: '믿기지가 않네요 ^^',
     img_url:'https://lh3.googleusercontent.com/pw/AP1GczNcpmCPemRVHvFxSgDqo6WqjfeL-wyP4xe6KZJRa6gbK_-iSTXwoRtnXssTf2HtyPAt4AQraWOrDYSIo5jdhG0BruTl7VwHZ6GV-8RsZxMl3hBCslTLvPUO0Uk4-4h8G6HgNbceryGPFMUPQ6h9WEnw=w965-h724-s-no-gm?authuser=0',
   },
+  {
+    title: "남산 달무리 체험",
+    date: "2024-09-17",
+    content: "날도 좋아 늦은 밤에 갔는데 보기 드문 광경이었어요. 사람들도 많이 보이네요.",
+    img_url: "https://scarce-yam-c34.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fd4bc0dca-9761-4876-ac05-f1e3c4f41a84%2F9d28057e-ddf5-4126-a856-4b378240208a%2FIMG_3882.jpeg?table=block&id=14251973-2e46-80a2-870f-d95a17e18d3f&spaceId=d4bc0dca-9761-4876-ac05-f1e3c4f41a84&width=770&userId=&cache=v2",
+  },
 ]
 
 export const hotestNewsData = [
