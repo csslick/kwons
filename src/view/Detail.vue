@@ -16,7 +16,7 @@
   
 <script setup lang='ts'>
   import { useRoute } from 'vue-router';
-  import { newsData, movieData } from '../assets/newsData';
+  import { newsData } from '../assets/newsData';
 
   const route = useRoute();
   const id:number = Number(route.params.id);

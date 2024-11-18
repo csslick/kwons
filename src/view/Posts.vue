@@ -13,7 +13,7 @@
   
 <script setup lang='ts'>
 import { ref } from 'vue';
-import { newsData, movieData } from '../assets/newsData';
+import { newsData } from '../assets/newsData';
 
 const news = ref(newsData);
 

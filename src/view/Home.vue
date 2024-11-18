@@ -28,18 +28,20 @@
                             img_url=hotest_news[0].img_url;
                             isModal=true;
                             title=hotest_news[0].title;
-                            content=hotest_news[0].content"
-                            href="#"
+                            content=hotest_news[0].content;
+                        "
+                        href="#"
                     >
-                        <img :src="hotest_news[0].img_url" alt="2"/>
+                        <img :src="hotest_news[0].img_url" alt="2" />
                     </a>
                     <a
                         @click.prevent="
                             img_url=hotest_news[1].img_url;
                             isModal=true;
                             title=hotest_news[1].title;
-                            content=hotest_news[1].content"
-                            href="#"
+                            content=hotest_news[1].content
+                        "
+                        href="#"
                     >
                         <img :src="hotest_news[1].img_url" alt="2"/>
                     </a>
@@ -71,12 +73,15 @@ import Modal from '../components/Modal.vue';
 import { Icon } from '@iconify/vue';
 
 const isInstallBtn = ref(false); // 앱 설치 버튼 활성화 여부
-let deferredPrompt = null; // 모바일 설치 버튼 클릭 이벤트 핸들러
+let deferredPrompt:any = null; // 모바일 설치 버튼 클릭 이벤트 핸들러
 
 // const news = ref(newsData)
 const hotest_news = ref(hotestNewsData);
 const isModal = ref(false);
+const title = ref('');
+const content = ref('');
 const img_url = ref('');
+console.log(hotest_news.value);
 
 // movieData randome 선택 
 const movie = ref(movieData[Math.floor(Math.random() * movieData.length)]);
