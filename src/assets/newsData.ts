@@ -1,10 +1,34 @@
 // 제목과 날짜를 포함한 뉴스 데이터 배열
 export const newsData = [
   {
+    title: "산책 같다와서 행복해요!",
+    date: "2024-11-19",
+    content: "누나들이랑 낚지먹고 산책갔다 왔는데 무척 행복해 보이네요. 어려 보이네?",
+    img_url: "https://scarce-yam-c34.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fd4bc0dca-9761-4876-ac05-f1e3c4f41a84%2F7b14cf21-2470-49a7-a2b1-ed8304f75522%2FPhoto_2024-11-20-12-17-24.jpeg?table=block&id=14451973-2e46-804f-b131-c276b784ef78&spaceId=d4bc0dca-9761-4876-ac05-f1e3c4f41a84&width=480&userId=&cache=v2",
+  },
+  {
+    title: "엄마 냄새가 나...",
+    date: "2024-11-19",
+    content: "베리는 여기가 어딘지 아는 듯",
+    img_url: "https://scarce-yam-c34.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fd4bc0dca-9761-4876-ac05-f1e3c4f41a84%2F94520e67-e6e7-4a65-9a55-88a7f8b1f43e%2FPhoto_2024-11-20-12-18-07.jpeg?table=block&id=14451973-2e46-8048-94a1-cbbf497a3e79&spaceId=d4bc0dca-9761-4876-ac05-f1e3c4f41a84&width=410&userId=&cache=v2",
+  },
+  {
+    title: "산낚지 다듬는거 보소-시식",
+    date: "2024-11-19",
+    content: "두가지 베리에이션으로 만들었는데 계란이 포인트네요. 날것을 좋아들 하지만 나는 익힌거로...",
+    img_url: "https://scarce-yam-c34.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fd4bc0dca-9761-4876-ac05-f1e3c4f41a84%2Fc7d0a9c4-ee5d-47dc-a5fd-90f7219f6383%2FPhoto_2024-11-20-12-16-47.jpeg?table=block&id=14451973-2e46-801a-a480-dddf8a67bc80&spaceId=d4bc0dca-9761-4876-ac05-f1e3c4f41a84&width=410&userId=&cache=v2",
+  },
+  {
+    title: "산낚지 다듬는거 보소",
+    date: "2024-11-19",
+    content: "예지엄마는 투덜투덜 하면서 예서는 신나게 산낚지를 다듬고 있네요.",
+    img_url: "https://scarce-yam-c34.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fd4bc0dca-9761-4876-ac05-f1e3c4f41a84%2F3e611a38-2c0c-403a-8a96-8046b13d6ed9%2FPhoto_2024-11-20-12-19-31.jpeg?table=block&id=14451973-2e46-808b-be2a-cb1823472cf4&spaceId=d4bc0dca-9761-4876-ac05-f1e3c4f41a84&width=410&userId=&cache=v2",
+  },
+  {
     title: "파주 흔들다리 체험",
     date: "2020-01-25",
     content: "파주에서 흔들다리 명소들을 체험해봤어요.",
-    img_url: "https://lh3.googleusercontent.com/pw/AP1GczNeXI5wGUlE_h6E84ZhMzZEDiTGtjgSzKx_V7syqHUzwd8bE-APHni_pC953fJY2tpYMdtBUyQVf_jScFTOba12ybsd0lofjge5dr5N-q4tlPiq7exOJmk2TnUsJXosRARC9Q7LiBt6nuChLm7G5JHt=w1448-h1714-s-no-gm?authuser=0",
+    img_url: "https://scarce-yam-c34.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fd4bc0dca-9761-4876-ac05-f1e3c4f41a84%2Fe4f59031-feff-4f3e-8679-cf8b3bfe5166%2F2020-01-25.jpg?table=block&id=14451973-2e46-8039-95f1-cc89b21718a4&spaceId=d4bc0dca-9761-4876-ac05-f1e3c4f41a84&width=580&userId=&cache=v2",
   },
   {
     title: "예서의 서울대 졸업을 축하하며",
@@ -40,7 +64,7 @@ export const newsData = [
     title: '결혼 기념일 30주년',
     date: '2023-11-26',
     content: '믿기지가 않네요 ^^',
-    img_url:'https://lh3.googleusercontent.com/pw/AP1GczNcpmCPemRVHvFxSgDqo6WqjfeL-wyP4xe6KZJRa6gbK_-iSTXwoRtnXssTf2HtyPAt4AQraWOrDYSIo5jdhG0BruTl7VwHZ6GV-8RsZxMl3hBCslTLvPUO0Uk4-4h8G6HgNbceryGPFMUPQ6h9WEnw=w965-h724-s-no-gm?authuser=0',
+    img_url:'https://scarce-yam-c34.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fd4bc0dca-9761-4876-ac05-f1e3c4f41a84%2Fac2eca13-3378-4f7f-998e-0b2632ad4e10%2FIMG_3319.jpeg?table=block&id=14451973-2e46-808c-a94b-c09a866a2f6b&spaceId=d4bc0dca-9761-4876-ac05-f1e3c4f41a84&width=580&userId=&cache=v2',
   },
   {
     title: "남산 달무리 체험",

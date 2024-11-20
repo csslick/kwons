@@ -67,7 +67,7 @@
 <script setup lang='ts'>
 import { ref, onMounted } from 'vue'
 // import { newsData, hotestNewsData } from '../assets/newsData';
-import { hotestNewsData, movieData } from '../assets/newsData';
+import { newsData, movieData } from '../assets/newsData';
 import News from '../components/News.vue'
 import Modal from '../components/Modal.vue';
 import { Icon } from '@iconify/vue';
@@ -76,7 +76,7 @@ const isInstallBtn = ref(false); // 앱 설치 버튼 활성화 여부
 let deferredPrompt:any = null; // 모바일 설치 버튼 클릭 이벤트 핸들러
 
 // const news = ref(newsData)
-const hotest_news = ref(hotestNewsData.sort(() => Math.random() - 0.5)); // 랜덤 순서로 섞기
+const hotest_news = ref(newsData.sort(() => Math.random() - 0.5)); // 랜덤 순서로 섞기
 const isModal = ref(false);
 const title = ref('');
 const content = ref('');
