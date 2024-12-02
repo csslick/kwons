@@ -13,6 +13,7 @@ export default defineConfig({
         short_name: '권가네',
         description: '바람잘날 없는 권가네 추억 공간',
         theme_color: '#ffffff',
+        background_color: '#f5f5f5', // 런치 스크린 배경색
         icons: [
           {
             src: 'icon-192x192.png',
