@@ -4,7 +4,7 @@ export const newsData = [
     title: "거구의 베리",
     date: "2024-12-15",
     content: "베리가 이렇게 큰 개였나? 예지를 가려버리네..",
-    img_url: "https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fd4bc0dca-9761-4876-ac05-f1e3c4f41a84%2F91473fb2-8f72-4c49-a768-6fce886b3acf%2FIMG_3931.jpg?table=block&id=15e51973-2e46-80e7-8634-dc6b1255189c&spaceId=d4bc0dca-9761-4876-ac05-f1e3c4f41a84&width=2000&userId=c106af88-03e9-40b4-9473-a36c3ae98eee&cache=v2",
+    img_url: "https://img.notionusercontent.com/s3/prod-files-secure%2Fd4bc0dca-9761-4876-ac05-f1e3c4f41a84%2F91473fb2-8f72-4c49-a768-6fce886b3acf%2FIMG_3931.jpg/size/w=2000?exp=1734411208&sig=9pkGSlNCWlYpF6FOGXy3C33L9wOiGynGWCSZZG0U3RU",
   },
   {
     title: "산책 같다와서 행복해요!",
